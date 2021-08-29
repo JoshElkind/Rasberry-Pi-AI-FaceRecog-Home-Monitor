@@ -1,0 +1,9 @@
+[Unit]
+Description=Systemd service for logging system info at startup
+
+[Service]
+User=pi
+ExecStart=sudo bash /bin/run_on_reboot_Pi4_HomeMonitor.sh
+
+[Install]
+WantedBy=basic.target
