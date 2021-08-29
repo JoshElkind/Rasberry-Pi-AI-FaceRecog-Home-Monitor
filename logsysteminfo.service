@@ -1,5 +1,5 @@
 [Unit]
-Description=Systemd service for logging system info at startup
+Description=Systemd service for running "run_on_reboot_Pi4_HomeMonitor.sh" file
 
 [Service]
 User=pi
