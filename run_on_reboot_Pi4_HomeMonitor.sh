@@ -4,8 +4,8 @@ export DISPLAY=0:0
 sudo systemctl stop motion
 sudo system motion stop
 sudo modprobe v4l2loopback exclusive_caps=1 video_nr=2
-sudo touch ffmep.txt
-sudo touch s8test.txt
+
+
 sudo ffmpeg -i /dev/video0 -f v4l2 -codec:v rawvideo -pix_fmt yuv420p /dev/vide$
 sudo python3 /home/pi/VSCode/Python/stream8081_pl.py & >> /s8test.txt 2>&1 
 sudo echo "--1--" >> /test_sh.txt
